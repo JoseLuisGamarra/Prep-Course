@@ -30,13 +30,18 @@ function invocarMetodo (objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+  objeto[metodo]();
 }
 
 function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-
+  var ojbMisterioso = {
+    numeroMisterioso: 4,
+  }
+    var result = objetoMisterioso.numeroMisterioso * 5;
+  return result;
 }
 
 function eliminarPropiedad (objeto, unaPropiedad) {
